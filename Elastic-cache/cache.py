@@ -12,7 +12,7 @@ CORS(app)
 # REDIS CONFIG
 # =========================
 redis_client = redis.Redis(
-    host='mycache-01-luhec3.serverless.usw2.cache.amazonaws.com',
+    host='myelastic-cluster-luhec3.serverless.usw2.cache.amazonaws.com',
     port=6379,
     ssl=True,
     decode_responses=True,
@@ -33,7 +33,7 @@ db_write_config = {
 }
 
 db_read_config = {
-    'host': 'my-replica-1.c5uk4oyau3v2.us-west-2.rds.amazonaws.com',
+    'host': 'read-replica-01.c5uk4oyau3v2.us-west-2.rds.amazonaws.com',
     'user': 'admin',
     'password': 'Password',
     'database': 'dev'
